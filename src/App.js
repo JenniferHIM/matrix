@@ -1,18 +1,29 @@
-import './App.css';
-import Form from 'components/Form/Form';
-import Button from 'components/TableMatrix/Button/Button';
-import TableHeader from 'components/TableMatrix/TableHeader/TableHeader';
+import Form from './components/Form';
+import TableMatrix from './components/TableMatrix';
 
-function App() {
+import {connect} from 'react-redux';
+import './App.css';
+import {useState, useEffect} from 'react';
+
+const App = ({settings}) => {
+  const [matrix, setMatrix] = useState(false);
+
+  useEffect(() => {
+    setMatrix(true);
+  }, [settings]);
+
   return (
     <>
-      <Form />
-      <section className={styles.sectionTable}>
-        <Button />
-        <TableHeader columns={5} />
+      <section className="section-form">
+        <Form />
       </section>
+      <section className="section-table">{matrix && <TableMatrix />}</section>
     </>
   );
-}
+};
 
-export default App;
+const mapStateToProps = (state) => ({
+  settings: state.matrix.settings,
+});
+
+export default connect(mapStateToProps)(App);
