@@ -1,0 +1,236 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*
+coral #f83030, #fc4639f5
+blue #61dafb, 1ba59e, 3db1ab
+yellow
+*/
+/* form */
+.section-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background-color: #1ba59e;
+}
+.title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: rgb(245, 248, 39);
+}
+.form-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.input {
+  width: 60px;
+  height: 100%;
+  color: #f83030;
+  font-size: 18px;
+  border-color: transparent;
+  border-radius: 5px;
+  box-shadow: inset rgba(252, 255, 255, 0.7) 0 3px 8px,
+    rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+}
+.input-text {
+  margin-right: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* buttons */
+
+.button {
+  min-width: 140px;
+  height: 40px;
+  margin: 20px 0 20px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-color: transparent;
+  border-radius: 7px;
+  box-shadow: inset rgba(252, 255, 255, 0.7) 0 3px 8px,
+    rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+}
+.btn-matrix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-addrow {
+  color: #0d4d5e;
+  background-color: rgb(245, 248, 39);
+}
+.btn-create {
+  color: #f83030;
+  background-color: #61dafb;
+}
+
+/*table*/
+
+.section-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-item {
+  width: 40px;
+  height: 40px;
+  border-color: black;
+  border-radius: 7px;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+}
+td {
+  width: 67px;
+  height: 42px;
+  user-select: none;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #0d4d5e;
+  font-weight: bold;
+  background-color: #61dafb;
+  border-radius: 7px;
+}
+.amount:hover,
+.amount.focus {
+  color: #ffff;
+  background-color: #f87a63;
+}
+.nearest-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  color: #0d4d5e;
+  background-color: rgb(245, 248, 39);
+}
+.percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.percent-text {
+  position: relative;
+  z-index: 2;
+}
+.column-percent {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-color: #fc4639f5;
+  width: 100%;
+}
+.remove-button {
+  border: none;
+  background-color: #fff;
+}
+
+.avg,
+.sum {
+  color: #ffff;
+  background-color: #1ba59e;
+}
+.avg:hover,
+.avg:focus,
+.sum:hover,
+.sum.focus {
+  background-color: #1ba59e;
+}
+
+/* random words */
+.section-words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 110, 100);
+}
+
+.btn-random {
+  color: #0d4d5e;
+  background-color: rgb(245, 248, 39);
+}
+.words-title {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+  /* height: 100%; */
+  color: #0d4d5e;
+  font-weight: bold;
+  background-color: #61dafb;
+  border-radius: 7px;
+  box-shadow: inset rgba(252, 255, 255, 0.7) 0 3px 8px,
+    rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+}
+.words-title:hover,
+.words-title:focus {
+  background-color: #fff;
+}
