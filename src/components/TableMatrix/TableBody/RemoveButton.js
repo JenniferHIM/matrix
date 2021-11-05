@@ -4,7 +4,6 @@ import actions from '../../../redux/matrix/actions';
 const RemoveButton = ({index, deleteRow}) => {
   const removeRow = () => {
     deleteRow(index);
-    console.log(removeRow);
   };
 
   return (

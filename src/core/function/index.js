@@ -14,6 +14,7 @@ export const createMatrix = (settings) => {
 
     let matrixRows = [];
     let start = 0;
+    console.log('start', start);
     for (let i = 0; i < settings.rows; i++) {
       matrixRows = [...matrixRows, arr.slice(start, settings.columns * (i + 1))];
       start = settings.columns * (i + 1);
